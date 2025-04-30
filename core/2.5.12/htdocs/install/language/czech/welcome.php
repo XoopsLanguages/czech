@@ -19,7 +19,7 @@ $content = '
 <h3>Požadavky</h3>
 <ul>
     <li>WWW server (<a href="https://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external">NGINX</a>, IIS, apod.)</li>
-    <li><a href="https://www.php.net/" rel="external">PHP</a> 5.6.0 nebo vyšší, doporučeno 7.3+</li>
+    <li><a href="https://www.php.net/" rel="external">PHP</a> 7.4 nebo vyšší, doporučeno 7.3+</li>
     <li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.5 nebo vyšší, doporučeno 5.7+</li>
 </ul>
 <h3>Před instalací</h3>
