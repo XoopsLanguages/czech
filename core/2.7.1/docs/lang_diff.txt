@@ -1,0 +1,667 @@
+JAZYKOVÉ ROZDÍLY
+=====================
+
+Níže jsou uvedeny jazykové rozdíly mezi jednotlivými verzemi.
+
+================================
+2025/03/30: Verze 2.7.0-Betas (dříve vydána jako 2.5.12-Betas)
+================================
+/htdocs/modules/system/language/english/admin.php
+- přidáno definovat('_AM_SYSTEM_MENUS', 'Nabídky');
+- přidáno definovat('_AM_SYSTEM_MENUS_DESC', 'Spravovat nabídky navigace na webu');
+
+/htdocs/modules/system/language/english/modinfo.php
+- přidáno definovat('_MI_SYSTEM_MENUS_ACTIVE', 'Povolit systém nabídek');
+- přidáno definovat('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Povolit vestavěný systém správy nabídek pro navigaci na webu');
+
+/htdocs/modules/system/language/english/admin/menus.php (NOVÝ SOUBOR)
+Pole
+- přidáno definovat('_AM_SYSTEM_MENUS_NAV_MAIN', 'Správce nabídek');
+- přidáno definovat('_AM_SYSTEM_MENUS_NAV_BACK', 'Zpět na seznam nabídek');
+- přidáno define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Zobrazení kategorií');
+- přidáno definovat('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Tipy:</strong><ul>...');
+- přidáno definovat('_AM_SYSTEM_MENUS_ACTIVE', 'Aktivní');
+- přidáno definovat('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Povoleno');
+- přidáno definovat('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Zakázáno');
+- přidáno definovat('_AM_SYSTEM_MENUS_SAVED', 'Úspěšně uloženo');
+- přidáno definovat('_AM_SYSTEM_MENUS_DELETED', 'Úspěšně smazáno');
+- přidáno definovat('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Objednávka uložena');
+- přidáno definovat('_AM_SYSTEM_MENUS_LISTCAT', 'Seznam kategorií');
+- přidáno definovat('_AM_SYSTEM_MENUS_LISTITEM', 'Seznam položek');
+- přidáno definovat('_AM_SYSTEM_MENUS_ADDCAT', 'Přidat kategorii');
+- ​​přidáno definovat('_AM_SYSTEM_MENUS_EDITCAT', 'Upravit kategorii');
+- přidáno definovat('_AM_SYSTEM_MENUS_DELCAT', 'Smazat kategorii');
+- přidáno definovat('_AM_SYSTEM_MENUS_CATTITLE', 'Název kategorie');
+- přidáno definovat('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Zde lze použít název jazykové konstanty (např. MENUS_HOME), aby bylo možné štítek přeložit.');
+Vyhledávače
+- přidáno define('_AM_SYSTEM_MENUS_CATPREFIX', 'Prefix (HTML)');
+- ​​přidáno define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Volitelné označení zobrazené před názvem kategorie, jako je ikona Font Awesome.');
+- přidáno definovat('_AM_SYSTEM_MENUS_CATSUFFIX', 'Přípona (HTML)');
+- ​​přidáno definovat('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Volitelné označení zobrazené za názvem kategorie.');
+- přidáno definovat('_AM_SYSTEM_MENUS_CATURL', 'URL');
+- přidáno definovat('_AM_SYSTEM_MENUS_CATURL_DESC', 'Odkaz na samotnou kategorii, jako je "index.php" nebo absolutní URL.');
+- přidáno definovat('_AM_SYSTEM_MENUS_CATTARGET', 'Cíl odkazu');
+- přidáno definovat('_AM_SYSTEM_MENUS_CATPOSITION', 'Pozice');
+- přidáno definovat('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Opravdu chcete smazat kategorii "%s" a všechny její položky?');
+- přidáno definovat('_AM_SYSTEM_MENUS_ADDITEM', 'Přidat položku');
+- přidáno definovat('_AM_SYSTEM_MENUS_EDITITEM', 'Upravit položku');
+- přidáno definovat('_AM_SYSTEM_MENUS_DELITEM', 'Smazat položku');
+- přidáno definovat('_AM_SYSTEM_MENUS_ITEMTITLE', 'Název položky');
+- přidáno definovat('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Zde lze použít název jazykové konstanty, aby bylo možné štítek přeložit.');
+- přidáno define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Prefix (HTML)');
+- ​​přidáno define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Volitelné označení zobrazené před názvem položky, jako je ikona Font Awesome.');
+- přidáno definovat('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Přípona (HTML)');
+- ​​přidáno define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Volitelné označení zobrazené za názvem položky. Podporuje zástupný symbol <{xoInboxCount}>.');
+- přidáno define('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- přidáno definovat('_AM_SYSTEM_MENUS_ITEMTARGET', 'Cíl odkazu');
+- přidáno definovat('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Pozice');
+- přidáno definovat('_AM_SYSTEM_MENUS_ITEMPARENT', 'Nadřazená položka');
+- přidáno definovat('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Category');
+- ​​přidáno definovat('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Opravdu chcete smazat položku "%s" a její podpoložky?');
+- přidáno define('_AM_SYSTEM_MENUS_TARGET_SELF', 'Stejné okno');
+- přidáno define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Nové okno');
+- přidáno definovat('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Skupiny, které vidí tuto kategorii');
+- přidáno definovat('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Uživatelé musí mít přístup ke kategoriím, než se některá z jejích položek stane viditelnou.');
+- přidáno definovat('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Skupiny, které vidí tuto položku');
+- přidáno definovat('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Oprávnění položek jsou kontrolována po povolení nadřazené kategorie.');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Kategorie nenalezena');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Nelze smazat chráněnou kategorii');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Nelze aktivovat: kategorie je neaktivní');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Položka nenalezena');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'Nelze smazat chráněnou položku');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Vybrána neplatná nadřazená položka');
+- ​​přidáno define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Nelze nastavit rodiče: vytvořilo by se kruhový odkaz');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Překročena maximální hloubka vnoření (3 úrovně)');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Nelze aktivovat: nadřazená položka je neaktivní');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'V této kategorii nejsou žádné položky podnabídky.');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Povolit tuto položku před její úpravou');
+- přidáno definovat('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Povolit tuto položku před jejím odstraněním');
+- přidáno definovat('MENUS_HOME', 'Domů');
+- přidáno definovat('MENUS_ADMIN', 'Administrace');
+- přidáno definovat('MENUS_ACCOUNT', 'Účet');
+- přidáno definovat('MENUS_ACCOUNT_EDIT', 'Upravit účet');
+- přidáno definovat('MENUS_ACCOUNT_LOGIN', 'Přihlášení');
+- přidáno define('MENUS_ACCOUNT_LOGOUT', 'Logout');
+- přidáno definovat('MENUS_ACCOUNT_REGISTER', 'Zaregistrovat se');
+- přidáno definovat('MENUS_ACCOUNT_MESSAGES', 'Zprávy');
+- přidáno definovat('MENUS_ACCOUNT_NOTIFICATIONS', 'Upozornění');
+- přidáno definovat('MENUS_ACCOUNT_TOOLBAR', 'Panel nástrojů');
+
+/htdocs/modules/system/constants.php
+- přidáno definovat('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "Blok 'Čekající obsah' je od XOOPS 2.5.11 zastaralý, použijte prosím modul Čekání");
+
+/htdocs/install/language/english/welcome.php
+- aktualizované verze PHP a MySQL
+
+/htdocs/modules/pm/language/english/main.php
+- updated define('_MD_PM_EMAIL_DESC', 'Vážený %s, toto je zpráva přenesená z vašeho účtu na ' . $GLOBALS['xoopsConfig']['sitename']);
+Odkaz
+- updated define('_MD_PM_EMAIL_DESC', 'Vážený %s, toto je zpráva přenesená z vašeho účtu na ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/language/english/user.php
+- aktualizováno define('_US_SORRYNOTFOUND', 'Omlouváme se, nebyly nalezeny žádné odpovídající informace o uživateli.');
+- updated define('_US_SORRYNOTFOUND', 'Pokud účet odpovídá poskytnutým informacím, zpracujeme váš požadavek. Pokud v krátké době neobdržíte e-mail, zkontrolujte prosím složku se spamem nebo kontaktujte administrátora webu.');
+
+- aktualizováno definovat('_US_PWDMAILED', 'Heslo pro %s odesláno poštou.');
+- updated define('_US_PWDMAILED', 'Pokud pro tento e-mail existuje účet, obdržíte pokyny k resetování hesla. V případě potřeby zkontrolujte složku se spamem nebo kontaktujte správce webu.');
+
+- aktualizováno definovat('_US_CONFMAIL', 'Potvrzení e-mailu pro %s odesláno.');
+- aktualizováno define('_US_CONFMAIL', 'Pokud pro tento e-mail existuje účet, obdržíte pokyny k resetování hesla. V případě potřeby zkontrolujte složku se spamem nebo kontaktujte správce webu.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- přejmenováno _XOOPS_EDITOR_TINYMCE_LANGUAGE5 na _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+přepínač
+- přejmenováno _OXYGEN_Server_API na _OXYGEN_SERVER_API
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- přidáno define('_MD_AM_SENDMAIL_NOT_FOUND', 'Binární soubor Sendmail nebyl nalezen. Zkontrolujte prosím konfiguraci serveru.');
+- přidáno definovat('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Nebyla nalezena žádná platná binární verze kompatibilní se sendmailem. Nainstalujte MTA (např. Postfix, msmtp) nebo přepněte na SMTP v Předvolbách.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- přidáno definovat('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Neznámá skupina');
+
+/htdocs/modules/system/language/english/comment.php
+- ​​přidáno definovat('_CM_ADDCOMMENT', 'Přidat komentář');
+
+
+/htdocs/install/language/english/install.php
+- přidáno define('_WEBSITE_NAME', 'XOOPS Site');
+- přidáno define('_WEBSITE_SLOGAN', 'Prostě to použijte!');
+- přidáno define('_WEBSITE_META_KEYWORDS', 'xoops, framework webové aplikace, cms, redakční systém');
+- přidáno define('_WEBSITE_FOOTER', "Používá XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='The XOOPS Project'>Projekt XOOPS</a>");
+- přidáno definovat('_WEBSITE_COPYRIGHT', 'Copyright © 2001-{X_YEAR}');
+- přidáno define('_WEBSITE_DESCRIPTION', 'XOOPS je dynamický objektově orientovaný open source portálový skript napsaný v PHP.');
+- přidáno define('_WEBSITE_CENSOR_REPLACE', 'OOPS');
+
+
+================================
+2023/10/01: Verze 2.5.11-Final
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Soubor nahrán, ale nelze změnit režim');
+
+================================
+2023/10/01: Verze 2.5.11-RC3
+================================
+
+ZMĚNĚNÉ SOUBORY:
+upgrade/language/english/upgrade.php
+upgrade/language/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- přidáno definovat('_FAILGETIMG', 'Nepodařilo se získat obrázek %s');
+
+/htdocs/modules/system/language/english/modinfo.php
+- přidáno definovat('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Dočasně zakázat');
+- přidáno define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-mail');
+- přidáno definovat('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Soukromá zpráva');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- přidáno definovat('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Výchozí způsob upozornění');
+- přidáno definovat('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Pro nové uživatele, když se přihlásí k odběru upozornění, např. z fóra.');
+- přidáno definovat('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Verze 2.5.11-RC1
+================================
+
+ZMĚNĚNÉ SOUBORY:
+htdocs/language/english/global.php
+- ​​přidáno define('_DB_QUERY_ERROR', 'Dotaz se nezdařil! SQL: %s - Chyba: ');
+- přidáno definovat('_PRINT', 'Tisk');
+- přidáno definovat('_PDF', 'PDF');
+- přidáno define('_OFF', 'Off');
+
+================================
+2021/09/02: Verze 2.5.11-Betas
+================================
+
+ZMĚNĚNÉ SOUBORY:
+htdocs/language/english/admin.php
+- přidáno definovat('_AD_WARNING_NO_XML', 'Pro tuto funkci je vyžadováno rozšíření PHP XML.');
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- přidáno definovat('_AM_ADMINSTATS_LAST_MONTH', 'Poslední měsíc');
+- přidáno definovat('_AM_ADMINSTATS_LAST_WEEK', 'Minulý týden');
+- přidáno definovat('_AM_ADMINSTATS_LAST_DAY', 'Poslední den');
+- přidáno definovat('_AM_ADMINSTATS_LAST_HOUR', 'Poslední hodina');
+
+htdocs/language/english/global.php
+- přidáno definovat('_PRINT', 'Tisk');
+- přidáno definovat('_PDF', 'PDF');
+- přidáno define('_OFF', 'Off');
+- změněno define('_ON', 'On'); //od 'on'
+
+htdocs/language/english/global.php
+- změněno definovat('_SIZE', 'Velikost'); // velikost písma
+- změněno define('_FONT', 'Font'); // rodina písem
+- změněno define('_COLOR', 'Color'); // barva písma
+
+htdocs/install/language/english/install.php
+- přidáno definovat('ERR_COPY_CONFIG_FILE', 'Nelze zkopírovat konfigurační soubor %s');
+
+htdocs/install/language/english/welcome.php
+- změněny doporučené verze PHP a MySQL, odkazy změněny na "https:"
+
+htdocs/modules/system/language/english/admin/preferences.php
+- změněno definovat('_MD_AM_SMTPHOSTDESC', 'Buď jeden název hostitele, nebo více názvů hostitelů oddělených středníkem.<br>Pro každého hostitele můžete také zadat jiný port pomocí tohoto formátu: [název_hostitele:port] (např. "smtp1.example.com:25;smtp.com" můžete zadat také forcrypt2,ex). příklad: (např. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Hostitelé budou zkoušeni v pořadí.');
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- změněno definovat('_AM_SYSTEM_MODULES_ADMIN', 'Správa modulu XOOPS');
+
+NOVÉ SOUBORY:
+htdocs/themes/xswatch4/language/english/main.php
+Spuštěno jako kopie xswatch/language/english/main.php, poté:
+- přidáno definovat('THEME_TOOLBAR_DEBUGMODE', 'Režim ladění');
+- ​​přidáno definovat('THEME_TOOLBAR_THIS_MODULE', 'Tento modul');
+- přidáno definovat('THEME_PERMISSIONS_LEGEND', 'Oprávnění & legenda');
+- přidáno definovat('TEME_INBOX_ALERT', 'PM Alert');
+- přidáno definovat('THEME_INBOX_LINK', 'Kliknutím sem zobrazíte svou doručenou poštu!');
+- přidáno definovat('TEME_EVENT_DOWNLOADS', 'Stahování událostí');
+- přidáno definovat('TEME_FILE_NAME', 'Soubor');
+- přidáno definovat('THEME_FILE_SIZE', 'Velikost');
+- přidáno definovat('THEME_CONTROL_NEXT', 'Další');
+- přidáno definovat('THEME_CONTROL_PREVIOUS', 'Předchozí');
+
+htdocs/language/english/user.php
+- přidáno define('_US_DESCRIPTIONMIN', 'Minimální požadovaná délka: %s');
+- přidáno define('_US_DESCRIPTIONMAX', 'Maximální délka: %s');
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- přidáno define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} vytiskne jméno nebo jméno, pokud je prázdné');
+
+htdocs/modules/system/language/english/admin/images.php
+- přidáno definovat("_AM_SYSTEM_IMAGES_SCATDELNG","Tuto kategorii nelze smazat");
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- přidáno definovat('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Administrátor tohoto modulu');
+
+SMAŽENÉ SOUBORY:
+htdocs/modules/system/language/english/admin/users.php
+- smazáno define('_AM_SYSTEM_USERS_MODIFYUSER', 'Upravit uživatele');
+- smazáno define('_AM_SYSTEM_USERS_DELUSER', 'Smazat uživatele');
+- smazáno define('_AM_SYSTEM_USERS_GO', 'Go!');
+
+================================
+29. 4. 2019: Verze 2.5.10 Finální
+================================
+PŘIDANÉ/ODSTRANĚNÉ DEFINUJE:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- přidáno definovat('_AM_LABEL_BAN_BY_IP', 'Zakázat IP adresy na kontrolovaných záznamech:');
+- přidáno define('_AM_BUTTON_BAN_BY_IP', 'IP Ban!');
+- přidáno definovat('_AM_JS_BANCONFIRM', 'Zakázání IP OK?');
+- přidáno define('_AM_MSG_BANNEDIP', 'IP adresy jsou zakázány');
+- přidáno define('_AM_ADMINSTATS_TITLE', 'Shrnutí protokolu ochrany');
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- přidáno definovat($constpref . '_ADMINSTATS', 'Přehled');
+- přidáno definovat($constpref . '_BANIP_TIME0DSC', 'Doba pozastavení v sekundách pro automatické zákazy IP');
+
+htdocs/language/english/uploader.php
+- přidáno define('_ER_UP_INDEXNOTSET', 'Pokus o načtení více souborů, index musí být nastaven.');
+
+htdocs/language/english/admin.php
+- přidáno define('_AD_WARNING_OLD_PHP', 'UPOZORNĚNÍ: Zvažte upgrade na novější verzi PHP. Verze %s nebo novější je doporučena a bude vyžadována v budoucích verzích XOOPS.');
+
+ZMĚNĚNÉ DEFINICE
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Pokud chcete změnit prefix,<br> upravte %s/data/secure.php ručně.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- změněna doporučená verze PHP, přidána sekce Speciální poznámky pro SELinux
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- v definici '_AM_MODULEADMIN_ADMIN_FOOTER' změnil XOOPS odkazy na 'https://xoops.org'
+
+NOVÉ SOUBORY:
+n/a
+
+===============================
+2017/08/01: Verze 2.5.9 Final
+===============================
+PŘIDANÉ/ODSTRANĚNÉ DEFINUJE
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- přidáno definovat('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Částka');
+- přidáno definovat('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Zadejte prosím částku v USD, např. 25,00 $');
+- přidáno definovat('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD');
+- přidáno definovat('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00');
+- přidáno define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- přidáno definovat('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Přispějte pomocí PayPal nebo hlavní kreditní karty online!');
+
+htdocs/install/language/english/install.php
+*POZNÁMKA* Instalační program byl výrazně změněn, takže tento soubor by měl být pečlivě zkontrolován
+- ​​přidáno definovat("CURL_HTTP", "Knihovna URL klienta (cURL)");
+- přidáno definovat('XOOPS_COOKIE_DOMAIN_LABEL', 'Doména cookie pro web');
+- přidáno definovat('XOOPS_COOKIE_DOMAIN_HELP', 'Doména pro nastavení souborů cookie. Může být prázdná, úplný hostitel z adresy URL (www.example.com) nebo registrovaná doména bez subdomén (example.com) ke sdílení mezi subdoménami (www.example.com a blog.example.com.)');
+- přidáno definovat('INTL_SUPPORT', 'Funkce internacionalizace');
+- přidáno definovat('XOOPS_SOURCE_CODE', "XOOPS na GitHubu");
+- ​​přidáno definovat('XOOPS_INSTALLING', 'Instaluji');
+- přidáno definovat('XOOPS_ERROR_ENCOUNTERED', 'Chyba');
+- přidáno definovat('XOOPS_ERROR_SEE_BELOW', 'Zprávy viz níže.');
+- přidáno definovat('MODULES_AVAILABLE', 'Dostupné moduly');
+- přidáno definovat('INSTALOVAT_THIS_MODULE', 'Přidat %s');
+
+htdocs/install/language/english/finish.php
+- změna tak, aby nové uživatele odkázala na xoops.org pro informace o modulech a tématech
+
+htdocs/language/english/global.php
+- přidáno define('_UPLOAD', 'Nahrát');
+- přidáno definovat('_SELECTFILES', 'Vybrat soubory');
+- přidáno define('_DROPFILESHERE', 'Sem přetáhněte soubory');
+- přidáno define('_RETRY', 'Opakovat');
+- přidáno definovat('_OK', 'Ok');
+- přidáno define('_FORMATPROGRESS', '{percent}% z {total_size}');
+- přidáno define('_FAILUPLOAD', 'Nahrávání se nezdařilo!');
+- přidáno definovat('_WAITINGFORRESPONSE', 'Zpracovávání...');
+- přidáno define('_PAUSED', 'Paused');
+- přidáno definovat('_PROCESSINGDROPPEDFILES', 'Zpracovávání zrušených souborů...');
+- přidáno define('_TYPEERROR', '{soubor} má neplatnou příponu. Platné přípony: {extensions}!');
+- přidáno define('_SIZEERROR', '{soubor} je příliš velký, maximální velikost souboru je {sizeLimit}!');
+- přidáno definovat('_MINSIZEERROR', '{soubor} je příliš malý, minimální velikost souboru je {minSizeLimit}!');
+- ​​přidáno definovat('_EMPTYERROR', '{soubor} je prázdný, prosím vyberte soubory znovu bez něj!');
+- přidáno definovat('_NOFILESERROR', 'Žádné soubory k nahrání!');
+- přidáno define('_TOOMANYITEMSERROR', 'Bylo nahráno příliš mnoho položek ({netItems}). Limit položek je {itemLimit}!');
+- přidáno definovat('_MAXHEIGHTIMAGEERROR', 'Obrázek je příliš vysoký!');
+- přidáno define('_MAXWIDTHIMAGEERROR', 'Obrázek je příliš široký!');
+- přidáno define('_MINHEIGHTIMAGEERROR', 'Obrázek není dostatečně vysoký!');
+- přidáno define('_MINWIDTHIMAGEERROR', 'Obrázek není dostatečně široký!');
+- přidáno define('_RETRYFAILTOOMANYITEMS', 'Opakování se nezdařilo – dosáhli jste limitu souborů!');
+- přidáno definovat('_ONLEAVE', 'Soubory se nahrávají, pokud nyní odejdete, nahrávání bude zrušeno!');
+- ​​přidáno definovat('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Neopravitelná chyba - tento prohlížeč neumožňuje nahrávání souborů jakéhokoli druhu kvůli vážným chybám v iOS8 Safari. Používejte prosím iOS8 Chrome, dokud Apple tyto problémy neopraví!');
+
+htdocs/language/english/uploader.php
+- přidáno definovat('_ER_UP_INISIZE', 'Nahraný soubor překračuje direktivu upload_max_filesize v php.ini');
+- přidáno definovat('_ER_UP_FORMSIZE', 'Nahraný soubor překračuje direktivu MAX_FILE_SIZE, která byla specifikována ve formuláři HTML');
+- přidáno definovat('_ER_UP_PARTIAL', 'Nahraný soubor byl nahrán pouze částečně');
+- přidáno define('_ER_UP_NOFILE', 'Nebyl nahrán žádný soubor');
+- přidáno definovat('_ER_UP_NOTMPDIR', 'Chybí dočasná složka');
+- přidáno definovat('_ER_UP_CANTWRITE', 'Nepodařilo se zapsat soubor na disk');
+- přidáno define('_ER_UP_EXTENSION', 'Nahrávání souboru zastaveno příponou. Zobrazit phpinfo()');
+- přidáno define('_ER_UP_UNKNOWN', 'Neznámá chyba při nahrávání');
+
+htdocs/language/english/user.php
+- smazáno define('_US_USECOOKIE', 'Uložit mé uživatelské jméno v cookie po dobu 1 roku');
+
+htdocs/modules/profile/language/english/admin.php
+- přidáno definovat('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Nemůžete deaktivovat účet správce webu');
+
+htdocs/modules/system/language/english/admin/comments.php
+- přidáno define('_MP_DELETECOUNT', 'Počet členů ve skupině je příliš velký ( > 4000) ');
+
+htdocs/modules/system/language/english/admin/userrank.php
+- přidáno define('_AM_SYSTEM_USERRANK_ERROR', 'Chyby');
+
+upgrade/language/english/upgrade.php
+- přidáno definovat('_LANGUAGE', 'Jazyk');
+- přidáno define('_SUPPORT', 'Podpora');
+- přidáno define('_XOOPS_SOURCE_CODE', 'XOOPS na GitHubu');
+- přidáno define('_PATCH_COUNT', 'Sady záplat');
+- přidáno definovat('_USERNAME_PLACEHOLDER', 'Vaše uživatelské jméno');
+- přidáno definovat('_PASSWORD_PLACEHOLDER', 'Vaše heslo');
+- přidáno define('_CONTINUE', 'Pokračovat');
+- přidáno definovat('XOOPS_ERROR_ENCOUNTERED', 'Chyba');
+- přidáno definovat('XOOPS_ERROR_SEE_BELOW', 'Zprávy viz níže.');
+
+htdocs/themes/xbootstrap/language/english/main.php
+odkaz
+- přidáno define("THEME_USER_WELCOME", "Vítejte");
+
+NOVÉ SOUBORY:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- upgrade/language/english/
+*POZNÁMKA* Kód upgradu byl výrazně změněn, takže by tyto soubory měly být pečlivě zkontrolovány
+- přesunuty všechny soubory jazyka oprav z adresářů oprav do upgrade/language/*
+  tj. upgrade/upd-2.0.18-to-2.3.0/language/english.php se stal
+  upgrade/language/english/upd-2.0.18-to-2.3.0.php
+
+- upgrade/language/english/support.php (stejné jako htdocs/install/language/english/support.php)
+- upgrade/language/english/welcome.php
+
+===============================
+27.05.2016: Verze 2.5.8
+===============================
+PŘIDANÉ/ODSTRANĚNÉ DEFINUJE
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- přidáno define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Instalovat více modulů");
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Aktivovat uživatele');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Výška bloku (řádky)");
+
+install/language/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Opakovat');
+define('CHMOD_CHGRP_IGNORE', 'Přesto použít');
+define('CHMOD_CHGRP_ERROR', 'Instalační program nemusí být schopen zapsat konfigurační soubor %1$s.<p>PHP zapisuje soubory pod uživatelem %2$s a skupinou %3$s.<p>Hrozné
+
+ZMĚNĚNÉ DEFINICE
+xoops_lib/modules/protector/language/english/modinfo.php
+definovat($constpref . '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Úložiště kódu');
+
+install/language/english/install.php
+define('SAVED_MAINFILE', 'Nastavení uloženo');
+define('ERR_NEED_WRITE_ACCESS', 'Server musí mít přístup pro zápis k následujícím souborům a složkám<br />(tj. <em>název_adresáře chmod 775</em> na serveru UNIX/LINUX)<br />Pokud nejsou dostupné nebo nejsou správně vytvořeny, vytvořte je prosím ručně a nastavte správná oprávnění.');
+define('ERR_COPY_MAINFILE', 'Nelze zkopírovat distribuční soubor do %s');
+define('ERR_WRITE_MAINFILE', 'Nelze zapisovat do %s. Zkontrolujte prosím oprávnění k souboru a zkuste to znovu.');
+define('ERR_READ_MAINFILE', 'Nelze otevřít %s pro čtení');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Úložiště kódu');
+
+NOVÉ SOUBORY:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+AKTUALIZOVÁNO Příklad třídy XoopsMailerLocal:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+2014/06/14: Verze 2.5.7 Final
+===============================
+PŘIDANÉ/ODSTRANĚNÉ DEFINUJE
+
+/install/language/english/install.php
+- přidáno definovat('WRITTEN_LICENSE',"Written XOOPS %s Licenční klíč: <strong>%s</strong>");
+
+===============================
+2014/03/18: Verze 2.5.7 RC1
+===============================
+PŘIDANÉ/ODSTRANĚNÉ DEFINUJE
+
+/modules/system/language/english/admin.php
+- přidáno define('_AM_SYSTEM_USAGE',"Usage");
+- přidáno define('_AM_SYSTEM_ACTIVE',"Aktivní");
+
+
+===============================
+2012/04/15: Verze 2.5.5
+===============================
+PŘIDANÉ/ODSTRANĚNÉ DEFINUJE
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- přidáno definovat("_AM_MODULEADMIN_HOME", "Domů");
+- přidáno define("_AM_MODULEADMIN_DASHBOARD", "Dashboard");
+- přidáno definovat("_AM_MODULEADMIN_ABOUT", "O");
+- přidáno definovat("_AM_MODULEADMIN_PERMISSIONS", "Oprávnění");
+- přidáno definovat("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Vydáno: ");
+- přidáno definovat("_AM_MODULEADMIN_ABOUT_AUTHOR","Autor: ");
+- přidáno define("_AM_MODULEADMIN_ABOUT_CREDITS","Credits: ");
+- přidáno define("_AM_MODULEADMIN_ABOUT_LICENSE","Licence: ");
+- přidáno definovat("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Jméno autora: ");
+- přidáno definovat("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Informace o autorovi");
+- přidáno define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Tento modul spravuje <a class='tooltip' rel='external' href='http://xoops.org/' title='Navštívit XOOPS Community'>Komunitu XOOPS</a></div>");");
+
+/language/english/calendar.php
+- přidáno define("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- přidáno define($constpref."_ADMINHOME","Home");
+- přidáno definovat($constpref."_ADMINABOUT","O");
+- přidáno definovat($constpref.'_STOPFORUMSPAM_ACTION','Zastavit spam ve fóru');
+- přidáno definovat($constpref.'_STOPFORUMSPAM_ACTIONDSC','Kontroluje POST data proti spammerům registrovaným v databázi www.stopforumspam.com. Vyžaduje php CURL lib.');
+
+
+/install/language/english/install.php
+- přidáno define( "FILTER_FUNCTIONS", "Funkce filtru");
+
+/language/english/global.php
+- přidáno define('_DBDATESTRING', 'Y-m-d');
+- přidáno define('_DBTIMESTRING', 'H:i:s');
+- přidáno define('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/language/english/pmsg.php
+- přidáno define('_MD_PM_READ', 'Již přečteno');
+
+/modules/system/language/english/admin.php
+- přidáno define("_AM_SYSTEM_UNINSTALL","Odinstalovat");
+
+VIZ TAKÉ:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+2011/11/17: Verze 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+2011/10/10: Verze 2.5.4 RC
+===============================
+
+NOVÉ SOUBORY:
+modules/pm/language/english/help/help.html
+modules/profile/language/english/help/help.html
+modules/protector/language/english/help/help.html
+
+PŘIDANÉ/ODSTRANĚNÉ DEFINUJE
+
+/language/english/pmsg.php
+delete define('_MD_PM_READ', 'Již přečteno');
+
+/language/english/user.php
+- přidáno define('_US_SKYPE', 'Skype');
+- ​​přidáno define('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/language/english/main.php
+- smazáno define("_MD_PM_RECEIVE","RECEIVE");
+- smazáno define("_MD_PM_POST","POST");
+- smazáno define("_MD_PM_READBOX","READBOX");
+- smazáno define("_MD_PM_RSAVEBOX","Receive_SAVEBOX");
+- smazáno define("_MD_PM_SENTBOX","SENTBOX");
+- smazáno define("_MD_PM_PSAVEBOX","Post_SAVEBOX");
+- smazáno define("_MD_PM_SAVED","Uloženo úspěšně");
+- smazáno define("_MD_PM_TOC","From: ");
+- smazáno define("_MD_PM_UID","ID odesílatele");
+
+/language/english/findusers.php
+- ​​přidáno definovat('_MA_USER_FACEBOOK', 'Odkaz na Facebook'); //TO DĚLAT
+- přidáno define('_MA_USER_SKYPE', 'Skype Link');//TO DO
+
+/modules/pm/language/english/modinfo.php
+- přidáno definovat("_MI_PM_ABOUT", "O");
+
+/modules/profile/language/english/admin.php
+- ​​přidáno definovat('_PROFILE_AM_ACTION', 'Akce');
+
+/modules/profile/language/english/modinfo.php
+- přidáno definovat("_PROFIL_MI_ABOUT", "O");
+- přidáno define("_PROFILE_MI_HOME", "Domů");
+
+
+/modules/system/language/english/admin/preferences.php
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Obecná nastavení");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Nastavení informací o uživateli");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Meta Tags and Footer");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Možnosti cenzury slov");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Možnosti vyhledávání");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","Nastavení e-mailu");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Možnosti ověřování");*/
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","A faire");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","A faire");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","A faire");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","A faire");
+- ​​smazáno define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","A faire");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","A faire");
+- smazáno define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","A faire");
+- smazáno define("_MD_AM_LOADINGIMG", "Zobrazení se načítá... obrázek?");
+- smazáno define("_MD_AM_CHNGUTHEME", "Změnit téma všech uživatelů");
+
+/modules/system/language/english/admin/users.php
+- přidáno define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Přijmout email od administrátora");
+
+- smazáno define("_AM_SYSTEM_USERS_NAV_MANAGER","Správce uživatelů");
+- smazáno define("_AM_SYSTEM_USERS_USERPOST","Příspěvky uživatelů");
+- smazáno define("_AM_SYSTEM_USERS_STORIES","Stories");
+- smazáno define("_AM_SYSTEM_USERS_COMMENTS","Komentáře");
+- smazáno define("_AM_SYSTEM_USERS_PTBBTSDIYT","Stiskněte tlačítko níže pro synchronizaci dat, pokud si myslíte, že výše uvedené informace o uživatelských příspěvcích neodpovídají skutečnému stavu");
+- smazáno define("_AM_SYSTEM_USERS_CNGTCOM","Nelze získat celkový počet komentářů");
+- smazáno define("_AM_SYSTEM_USERS_CNGTST","Nelze získat celkový počet příběhů");
+- smazáno define("_AM_SYSTEM_USERS_LIST","Seznam");
+- smazáno define("_AM_SYSTEM_USERS_USERPOST","Příspěvky uživatelů");
+- smazáno define("_AM_SYSTEM_USERS_STORIES","Stories");
+- smazáno define("_AM_SYSTEM_USERS_COMMENTS","Komentáře");
+- smazáno define("_AM_SYSTEM_USERS_PTBBTSDIYT","Stiskněte tlačítko níže pro synchronizaci dat, pokud si myslíte, že výše uvedené informace o uživatelských příspěvcích neodpovídají skutečnému stavu");
+- smazáno define("_AM_SYSTEM_USERS_CNGTCOM","Nelze získat všechny komentáře");
+- smazáno define("_AM_SYSTEM_USERS_CNGTST","Nelze získat všechny příběhy");
+- smazáno define("_AM_SYSTEM_USERS_LIST","Seznam");
+
+xoops_lib/modules/protector/language/english/admin.php
+- přidáno definovat("_AM_ADV_REGISTERGLOBALS2","a umístit do něj řádek níže:");
+
+ZMĚNĚNÉ SOUBORY:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+2011/10/05: Verze 2.5.4 Beta
+===============================
+- aktualizováno několik anglických překladů (DCrussader/Mamba)
+- smazán jazyk/angličtina/calendar.php _CAL_DEF_DATE_FORMAT
+- smazán jazyk/angličtina/calendar.php _CAL_TT_DATE_FORMAT
+- smazané moduly/systém/jazyk/english/admin/users.php _AM_SYSTEM_USERS_NAV_MANAGER
+- smazané moduly/system/language/english/admin/preferences.php _MD_AM_LOADINGIMG
+- smazané moduly/system/language/english/admin/preferences.php _MD_AM_CHNGUTHEME
+- smazané moduly/pm/language/english/admin/main.php _MD_PM_RECEIVE, _MD_PM_POST, _MD_PM_READBOX, _MD_PM_RSAVEBOX, _MD_PM_SENTBOX, _MD_PM_PSAVEBOX, _MD_PM_SAVED, _MD_PM_TOC
+- přidáno /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- přidáno /modules/profile/language/english/main.php _PROFILE_MI_ABOUT
+- přidáno /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- přidáno /modules/pm/language/english/modinfo.php _MI_PM_ABOUT
+- přidány moduly/systém/jazyk/angličtina/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- přidán jazyk/angličtina/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- přidáno definovat($constpref.'_STOPFORUMSPAM_ACTION','Zastavit spam ve fóru');
+- přidáno definovat($constpref.'_STOPFORUMSPAM_ACTIONDSC','Kontroluje POST data proti spammerům registrovaným v databázi www.stopforumspam.com. Vyžaduje php CURL lib.');
+
+
+
+===============================
+2011/09/06: Verze 2.5.2 RC
+===============================
+ - přidán jazyk/angličtina/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - přidán jazyk/angličtina/pmsg.php _MD_PM_SURE_TO_DELETE, _MD_PM_READ
+ - přidány moduly/pm/language/english/admin/main.php _MD_PM_READ, _MD_PM_SUBJECT_ICONS
+ - modules\system/language/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - odstraněné moduly/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+ - odstraněné moduly/system/language/english/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - přidán jazyk/angličtina/calendar.php _CAL_DEF_DATE_FORMAT
+ - přidán jazyk/angličtina/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+2011/03/15: Verze 2.5.1 RC
+===============================
+
+Přidané jazykové konstanty:
+  modules/system/language/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Upravené jazykové konstanty:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modules/system/language/english/helper/help_center.html, modulesadmin.html
+
+Odebrané jazykové konstanty:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXGERED_TEXT_BYGENYCEPO
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXGERED_TEXT_BYGENYCEPO
