@@ -1,0 +1,37 @@
+<div class="outer" id="help-template">
+<h1 class="head">Nápověda: Šablony</h1>
+<h4 class="odd">Popis</h4>
+<p class="even">
+        XOOPS umožňuje určité oddělení mezi skutečnou prezentací webu („<em>skin</em>” nebo uživatelské rozhraní) a kód, který běží na zadní straně. První z nich je zpracován sofistikovaným mechanismem založeným na grafických tématech. Téma může ve své základní podobě obsahovat základní HTML
+        šablony, které definují vizuální rozhraní webu, stejně jako šablony stylů a obrázky potřebné k doplnění tohoto vizuálního rozhraní. Motivy lze přepínat v administrativním rozhraní, takže změna celkového vzhledu webu XOOPS je jen otázkou změny hodnoty
+        volič a klikněte na „Přijmout“. XOOPS také poskytuje správcům stránek možnost nechat uživatele vybrat si mezi některými dostupnými motivy.<br/><br/>
+
+        Obecně řečeno, a <strong><em>theme</em></strong> je vizuální rámec webu na vysoké úrovni: téma definuje například obecný vzhled webu; na druhou stranu obvykle nedefinuje konkrétní distribuci obsahu v rámci bloku. Toto řeší a
+        jiná entita zvaná a <em><strong>template set</strong></em>. Sada šablon<em> </em>je soubor HTML šablon, které definují prezentaci obsahu ve všech blocích, které tvoří web XOOPS. Pokud bychom pro to chtěli jasnější metaforu, mohli bychom říci, že téma je podobné
+        architekt domu, zatímco sada šablon je jako interiérový dekoratér. První nastavuje stěny a definuje obecnou distribuci, ale je to druhý, kdo má na starosti „<em>dresink</em>” ty zdi.<br/><br/>
+
+        Pokud je aktivní motiv jednoduchý, který obsahuje pouze soubor motivu, soubory CSS a některé obrázky, XOOPS používá výchozí sadu šablon k definování prezentace bloků. Některá komplexní témata jsou však dostatečně propracovaná, aby zahrnovala vlastní sadu šablon. V tomto případě web
+        správce musí k nastavení motivu i sady šablon použít administrativní rozhraní. <br/><br/>
+
+        Jak je to téma <em>magie
+téma</em> splněno? To znamená, jak mohou šablony HTML obsahovat dynamický obsah? To se provádí nikoli pomocí zrcadel a kouře, ale pomocí chytrého šablonového enginu, tzv
+        <strong><a href="https://www.smarty.net/" rel="external">Smarty</a></strong> dělá funkci toho, čemu se dříve říkalo
+        <em><strong>proměnná interpolace</strong></em>. Zjednodušeně bychom mohli říci, že systém XOOPS používá k uchovávání logiky modulů soubory PHP (přístup k databázi, přidělování proměnných, správa práv...), soubory HTML s vloženými proměnnými Smarty pro správu
+        skutečné vizuální rozhraní a Smarty engine pro vkládání hodnot a řetězců na konkrétní místa v HTML, které vytváří stránky, které vidí koncový uživatel. Celkově vzato, co to pro vás znamená, lze snadno shrnout: díky svému systému motivů umožňuje XOOPS návrhářům webů vytvářet více
+        zajímavé a vizuálně ohromující stránky bez velkých obav z toho, co se děje pod kapotou.
+    </p>
+<h4 class="odd">Klonování a stahování sad šablon</h4>
+<p class="even">
+        Pokud byste chtěli vytvořit vlastní sadu šablon, můžete vytvořit kopii výchozí sady (nebo jakékoli jiné) výběrem možnosti ‘<em>klon</em>’ (budete vyzváni k zadání názvu nové sady). Na rozdíl od výchozího nastavení lze jiné sady šablon libovolně upravovat. Můžete také uložit kopii a
+        šablona nastavena na disk výběrem „<em>ke stažení</em>' nebo jej odstraňte pomocí '<em>smazat</em>'. Někdy také můžete vidět další „<em>Vygenerovat</em>’ vedle nových modulů, pro které ještě nebyly vytvořeny šablony.
+    </p>
+<h4 class="odd">Úprava šablon</h4>
+<p class="even">
+        Úplný seznam dostupných šablon můžete vidět procházením stromové struktury adresářů. Když vyberete šablonu, XOOPS ji otevře v editoru, kde ji můžete upravit. <br/><br/>
+
+        Při úpravách šablon musíte povolit předvolbu, která automaticky aktualizuje soubory .tpl šablony modulu, pokud jsou v adresáři themes/vaše téma/templates pro aktuální téma novější soubory (Systémový modul -&gt; Předvolby -&gt; Obecná nastavení -&gt; Aktualizovat soubory .tpl šablony modulu
+        z adresáře témat/vašeho tématu/šablony? -&gt;'<em>Ano</em>’). Toto by mělo být vypnuto, jakmile bude web veřejný.<br/><br/>
+        Pokud šablonu omylem pokazíte, nezapomeňte, že můžete získat<em>dobrý</em>' zkopírujte z výchozí sady šablon. Pokud pracujete s nestandardními šablonami, může být dobré uložit kopii na disk, než je začnete upravovat.
+
+    </p>
+</div>

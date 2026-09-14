@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Nápověda: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Profil <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Obsah nápovědy ---------- 
+<h4 class="odd">POPIS</h4>
+<p class="even">Modul Profil slouží ke správě vlastních polí uživatelského profilu.</p>
+<h4 class="odd">INSTALOVAT/ODINSTALOVAT</h4>
+<p>Nejsou nutná žádná zvláštní opatření, postupujte podle standardního instalačního procesu – rozbalte složku /profile do adresáře ../modules. Nainstalujte modul přes Správce -&gt; Systémový modul -&gt; Moduly.</p>
+<p>Podrobné pokyny k instalaci modulů jsou k dispozici v <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">Návod k obsluze XOOPS</a> <br/><br/></p>
+<h4 class="odd">NÁVOD K OBSLUZE</h4>
+<p class="even">K nastavení tohoto modulu potřebujete:</p>
+<ul>
+<li>Nakonfigurujte své preference pro modul (viz ‚Předvolby‘) a volitelně blok Profil, pokud jej hodláte používat (viz ‚Blokování‘).</li>
+<li>Upravte existující kategorie nebo přidejte nové.</li>
+<li>Upravte stávající pole nebo přidejte nová. Zde můžete určit, která pole budou viditelná v které kategorii a zda budou viditelná při registraci uživatele.</li>
+<li>Definujte pořadí kroků registrace.</li>
+<li>A nakonec můžete nastavit oprávnění pro jednotlivá pole - která jsou upravitelná, která lze vyhledávat.<br/><br/></li>
+</ul>
+<h4 class="odd">Opatření proti spamu</h4>
+<p class="even">Chcete-li minimalizovat registrace spamu, proveďte následující:</p>
+<ul>
+<li> přejděte do modulu Protector v Admin, přejděte na Předvolby a poté dole na tuto možnost:
+
+            "Zastavit spam ve fóru"
+            Kontroluje POST data proti spammerům registrovaným v databázi www.stopforumspam.com. <br/>
+            Nastavte jej na "Ban the IP (no limit)"
+        </li>
+<br/>
+<li> v /class/captcha/config.php, ujistěte se, že je režim nastaven jako "text":<br/><br/>
+<span style="font-style: italic;">     return $config = array(<br/>
+    'disabled' =&gt; false, // Zakázat CAPTCHA<br/>
+    'mode' =&gt; 'text', // výchozí režim, můžete si vybrat 'text', 'image', 'recaptcha' (vyžaduje klíč API)<br/>
+    'name' =&gt; 'xoopscaptcha', // název captcha<br/>
+    'skipmember' =&gt; true, // Přeskočit kontrolu CAPTCHA pro členy<br/>
+    'maxattempts' =&gt; 10, // Maximální počet pokusů pro každou relaci<br/>
+    );</span></li>
+<br/>
+<li> V modulu Profil přejděte do Správce a v základním kroku na adrese:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            nastavte "Uložit po zastavení" na "Ne"
+        </li>
+<br/><br/>
+<li> V Předvolbách profilu nastavte možnost "Použít Captcha po druhém kroku registrace" na "Ano" (je výchozí)</li>
+<br/>
+<ul>
+<h4 class="odd">NÁVOD</h4>
+<p class="even">Tutoriál již brzy.<br/></p>
+ -----Obsah nápovědy ---------- 
+</ul></ul></div>

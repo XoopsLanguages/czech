@@ -1,0 +1,85 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    cs
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'Systém');
+define('_MI_SYSTEM_DESC', 'Pro správu základních nastavení webu.');
+define('_MI_SYSTEM_BNAME2', 'Uživatelské menu');
+define('_MI_SYSTEM_BNAME3', 'Přihlásit');
+define('_MI_SYSTEM_BNAME4', 'Hledat');
+define('_MI_SYSTEM_BNAME5', 'Čekající obsah');
+define('_MI_SYSTEM_BNAME6', 'Hlavní menu');
+define('_MI_SYSTEM_BNAME7', 'Informace o webu');
+define('_MI_SYSTEM_BNAME8', 'Kdo je online');
+define('_MI_SYSTEM_BNAME9', 'Nejaktivnější přispěvatelé');
+define('_MI_SYSTEM_BNAME10', 'Noví členové');
+define('_MI_SYSTEM_BNAME11', 'Nedávné komentáře');
+define('_MI_SYSTEM_BNAME12', 'Možnosti oznámení');
+define('_MI_SYSTEM_BNAME13', 'Témata');
+define('_MI_SYSTEM_ADMENU1', 'Bannery');
+define('_MI_SYSTEM_ADMENU2', 'Bloky');
+define('_MI_SYSTEM_ADMENU3', 'Skupiny');
+define('_MI_SYSTEM_ADMENU5', 'Moduly');
+define('_MI_SYSTEM_ADMENU6', 'Předvolby');
+define('_MI_SYSTEM_ADMENU7', 'Smajlíky');
+define('_MI_SYSTEM_ADMENU9', 'Uživatelské hodnosti');
+define('_MI_SYSTEM_ADMENU10', 'Upravit uživatele');
+define('_MI_SYSTEM_ADMENU11', 'Email uživatelům');
+define('_MI_SYSTEM_ADMENU12', 'Najít uživatele');
+define('_MI_SYSTEM_ADMENU13', 'Obrázky');
+define('_MI_SYSTEM_ADMENU14', 'Avatary');
+define('_MI_SYSTEM_ADMENU15', 'Šablony');
+define('_MI_SYSTEM_ADMENU16', 'Komentáře');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'Obecná nastavení');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'Pomoc online?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'Zde najdete tipy a online nápovědu');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'ikony');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'Drobečková navigace');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'Aktivní sekce');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'Aktivní avatary');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'Aktivní bannery');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'Aktivní komentáře');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'Aktivní správce souborů');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'Správce aktivních obrázků');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'Aktivní uživatelé e-mailu');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'Aktivní smajlíci');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'Aktivní uživatelské hodnosti');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'Aktivní uživatelé');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'Aktivní údržba');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'Počet řádků k zobrazení v administraci');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'Počet avatarů k zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'Počet bannerů k zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'Počet komentářů k zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'Počet skupin k zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'Počet obrázků k zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'Počet smajlíků k zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'Počet zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'Počet uživatelů k zobrazení na stránce');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'Nastavení editoru');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'Editor pro bloky:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'Editor pro komentáře:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'Editor pro všechny moduly:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'téma jQuery');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Dočasně zakázat');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-mail');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Soukromá zpráva');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'Povolit systém nabídek');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Povolí vestavěný systém správy nabídek pro navigaci na webu');
+
+//2.8.0
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_LANGUAGES', 'Povolit správu jazyků');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_LANGUAGES_DESC', 'Spravujte registr národních prostředí, jazykové balíčky, kontroly stavu a přepsání překladů webu.');
+define('_MI_SYSTEM_BNAME14', 'Přepínač jazyků');
